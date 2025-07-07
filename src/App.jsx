@@ -1,20 +1,16 @@
-import { Routes, Route } from 'react-router-dom';
-import Home from "@/pages/Home/Home.jsx";
-import Header from "@components/layout/Header/Header.jsx";
+import MainLayout from './components/layout/MainLayout/MainLayout.jsx'
+import '@assets/styles/globals.css';
 
-
-function App() {
+const App = () => {
   return (
-    <div>
-        <Header />
-        <main>
-            <Routes>
-            <Route path="/" element={<Home />} />
-            </Routes>
-        </main>
-    </div>
-      
-  );
+    <MainLayout>
+      {/* Добавим тестовый контент */}
+      <div className="col-span-12 bg-green-100 p-8 text-center">
+        <h1 className="text-3xl font-bold">Основной контент</h1>
+        <p>Сетка работает!</p>
+      </div>
+    </MainLayout>
+  )
 }
 
 export default App;

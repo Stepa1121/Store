@@ -1,9 +1,11 @@
 import React from "react";
+import clsx from 'clsx';
+import './Home.css'
 
-
-const Home = () => {
+const HomePage = () => {
     return(
-        <h1>Stepa</h1>
+        <h1>Hello</h1>
     )
 }
-export default Home;
+
+export default HomePage;
