@@ -6,7 +6,11 @@ import svgr from 'vite-plugin-svgr';
 
 export default defineConfig({
   assetsInclude: ['**/*.svg'],
-  plugins: [react()],
+  plugins: [react(),  svgr({
+      svgrOptions: {
+        // Настройки SVGR (опционально)
+      },
+    }),],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),

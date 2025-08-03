@@ -1,4 +1,4 @@
-div {
+.mainLayout {
     background-image: url('/src/assets/images/Background/backgroundHorizontal.png');
     background-size: cover; 
     background-attachment: fixed;
