@@ -1,14 +1,17 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { svgIcons } from '../../../assets/images/image';
 import SearchBar from './components/SearchBar';
+import useMediaQuery from './components/MediaQuery';
 import './Header.css';
 
 const Header = () => {
+  const isMobile = useMediaQuery('(max-width: 1025px)');
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  
+
   const toggleSearch = () => {
     setIsSearchOpen(!isSearchOpen);
   };
+  
   
   return (
     <header className='flex col-start-1 col-end-13 gap-x-6 px-5 tablet:justify-between phone:justify-between'>
@@ -34,6 +37,7 @@ const Header = () => {
       <SearchBar
       isSearchOpen={isSearchOpen} 
       toggleSearch={toggleSearch}
+      isMobile={isMobile}
       />
     </header>
   );

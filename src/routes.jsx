@@ -1,15 +1,21 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import path from 'path'; // Убедитесь, что `path` установлен (есть в Node.js по умолчанию)
+import { createBrowserRouter } from "react-router-dom";
+import MainLayout from "./components/layout/MainLayout";
+import Home from "./pages/Home";
+import ProductList from "./pages/ProductList";
 
-export default defineConfig({
-  plugins: [react()],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-      '@components': path.resolve(__dirname, './src/components'),
-      '@assets': path.resolve(__dirname, './src/assets'),
-      // Добавьте другие алиасы по необходимости
-    },
+export const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <MainLayout />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "products", // изменил "about" на "products" для соответствия компоненту
+        element: <ProductList />,
+      },
+    ],
   },
-});
+]);
