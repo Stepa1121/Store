@@ -1,10 +1,13 @@
 import React from "react";
 import clsx from 'clsx';
-import './Home.css'
+import ProductCard from '@components/product/ProductCart'
+import products from "@/data/products.json"
+import './home.css'
 
 const HomePage = () => {
     return(
-        <h1>Hello</h1>
+        <div>
+        </div>
     )
 }
 

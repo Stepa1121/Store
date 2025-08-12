@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Мужская зимняя куртка",
+    "description": "Теплая зимняя куртка с водоотталкивающим покрытием, утеплитель 200г.",
+    "price": 7990,
+    "discount_price": 5990,
+    "image": "/ProductCards/Jacket.jpg",
+    "stock": 15
+  },
+  {
+    "id": 2,
+    "title": "Женские джинсы",
+    "description": "Стройнящие джинсы с высокой талией, 98% хлопок, 2% эластан.",
+    "price": 3490,
+    "discount_price": null,
+    "image": "/ProductCards/Jacket.jpg",
+    "stock": 8
+  },
+  {
+    "id": 3,
+    "title": "Беговые кроссовки",
+    "description": "Легкие кроссовки с амортизацией для бега, дышащий материал.",
+    "price": 5490,
+    "discount_price": 4490,
+    "image": "/ProductCards/Jacket.jpg",
+    "stock": 22
+  },
+  {
+    "id": 4,
+    "title": "Футболка классическая",
+    "description": "Хлопковая футболка оверсайз, унисекс, 100% хлопок.",
+    "price": 1290,
+    "discount_price": 990,
+    "image": "/ProductCards/Jacket.jpg",
+    "stock": 0
+  }
+]

@@ -1,10 +1,19 @@
-import React from "react";
-import clsx from 'clsx';
+import ProductCart from "@components/product/ProductCart";
+import products from "@/data/products.json"
 
-const ProductListPage = () => {
+const ProductList = () => {
     return(
-        <h1>I'm stepa</h1>
+        <div className="flex flex-wrap col-span-full justify-center gap-y-20 py-10">
+            {products.map((product) => (
+                <div 
+                    key={product.id}
+                    className="w-[32%] tablet:w-[48%] phone:w-full flex justify-center"
+                >
+                    <ProductCart product={product} />
+                </div>
+            ))}
+        </div>
     )
 }
 
-export default ProductListPage;
+export default ProductList;

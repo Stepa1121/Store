@@ -1,5 +1,5 @@
 import { useSpring, animated } from '@react-spring/web'
-import { svgIcons } from '@assets/images/image'
+import { svgIcons } from '@assets/images/icons/image'
 import { useEffect, useRef } from 'react'; // Добавляем хуки
 import './SearchBar.css'
 

@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { svgIcons } from '../../../assets/images/image';
+import { svgIcons } from '@assets/images/icons/image.js';
 import SearchBar from './components/SearchBar';
 import useMediaQuery from './components/MediaQuery';
-import './Header.css';
+import './header.css';
 
 const Header = () => {
   const isMobile = useMediaQuery('(max-width: 1025px)');
@@ -14,7 +14,7 @@ const Header = () => {
   
   
   return (
-    <header className='flex col-start-1 col-end-13 gap-x-6 px-5 tablet:justify-between phone:justify-between'>
+    <div className='flex grow gap-x-6 px-5 tablet:justify-between phone:justify-between py-5'>
       <button className='flex items-center justify-center'>
         <svgIcons.MenuOutline className='w-8 h-8 desktop:w-6 desktop:h-6 phone:w-7 phone:h-7 hover:fill-sky-400'/>
       </button>
@@ -39,7 +39,7 @@ const Header = () => {
       toggleSearch={toggleSearch}
       isMobile={isMobile}
       />
-    </header>
+    </div>
   );
 };
 
